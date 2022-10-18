@@ -19,23 +19,22 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text == "")
+            int[] i = { 2,6 };
+            int[] j = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] k = { 0, 1, 2, 3 };
+
+            foreach (int num1 in i)
             {
-                MessageBox.Show("textBox1에 단을 입력하세요", "경고 1");
-                textBox1.Focus();
-                goto Nagayo;
+                foreach (int num2 in j)
+                {
+                    foreach (int num3 in k)
+                    {
+                        textBox1.Text = textBox1.Text + (num1 + num3) + " X " + num2 + " = " + ((num1 + num3) * num2) + "       ";
+                    }
+                    textBox1.Text = textBox1.Text + Environment.NewLine;
+                }
+                textBox1.Text = textBox1.Text + Environment.NewLine;
             }
-            uint iDan = uint.Parse(textBox1.Text);
-            uint i = 1;
-            textBox2.Text = "";
-            while(true)
-            {
-                textBox2.Text = textBox2.Text + iDan + " X " + i + " = " + (iDan * i) + "\r\n";
-                i++;
-                if (i > 9)
-                    break;
-            }
-        Nagayo:;
         }
     }
 }

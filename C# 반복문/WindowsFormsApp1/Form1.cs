@@ -19,12 +19,25 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int i, num1;
-            num1 = int.Parse(textBox1.Text);
-            
-            for (i = 1;i < 10;i++)
+            int i, j, k;
+            i = 2;
+            j = 1;
+            k = 0;
+            while (i <= 9)
             {
-                textBox2.Text = textBox2.Text + num1 + " X " + i + " = " + (num1 * i) + "\r\n";
+                while (j <= 9)
+                {
+                    while (k <= 3)
+                    {
+                        textBox1.Text = textBox1.Text + (i + k) + " X " + j + " = " + ((i + k) * j) + "       ";
+                        
+                        k++;
+                    }
+                    k = 0; textBox1.Text = textBox1.Text + Environment.NewLine;
+                    j++;
+                }
+                j = 1; textBox1.Text = textBox1.Text + Environment.NewLine;
+                i += 4;
             }
         }
     }

@@ -19,20 +19,19 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            int i, j, k;
+            for (i = 8; i >= 2; i -=2)
             {
-                MessageBox.Show("textBox1에 단을 입력하세요", "경고 1");
-                textBox1.Focus();
-                goto Nagayo;
+                for (j = 1; j <= 9;j++)
+                {
+                    for (k = 0; k <=1;k++)
+                    {
+                        textBox1.Text = textBox1.Text + (i + k) + " X " + j + " = " + ((i + k) * j) + "     ";
+                    }
+                    textBox1.Text = textBox1.Text + Environment.NewLine;
+                }
+                textBox1.Text = textBox1.Text + Environment.NewLine;
             }
-            uint iDan = uint.Parse(textBox1.Text);
-            uint[] i = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-            textBox2.Text = "";
-            foreach(uint dd in i)
-            {
-                textBox2.Text = textBox2.Text + iDan + " X " + dd + " = " + (iDan * dd) + "\r\n";
-            }
-        Nagayo:;
         }
     }
 }

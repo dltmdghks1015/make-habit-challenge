@@ -19,20 +19,22 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            uint i, j;
-            i = 1;
-            j = 1;
-            do
+            int[] i = { 8,6,4,2 };
+            int[] j = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] k = { 0, 1 };
+
+            foreach (int num1 in i)
             {
-                do
+                foreach (int num2 in j)
                 {
-                    textBox1.Text = textBox1.Text + i + " X " + j + " = " + (i * j) + "\r\n";
-                    j++;
-                } while (j <= 9);
-                j = 1;
-                i++;
+                    foreach (int num3 in k)
+                    {
+                        textBox1.Text = textBox1.Text + (num1 + num3) + " X " + num2 + " = " + ((num1 + num3) * num2) + "     ";
+                    }
+                    textBox1.Text = textBox1.Text + Environment.NewLine;
+                }
                 textBox1.Text = textBox1.Text + Environment.NewLine;
-            } while (i <= 9);
+            }
         }
     }
 }

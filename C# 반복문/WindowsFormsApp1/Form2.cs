@@ -19,25 +19,28 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
+            int i, j, k;
+            i = 2;
+            j = 1;
+            k = 0;
+            while (true)
             {
-                MessageBox.Show("textBox1에 단을 입력하세요", "경고 1");
-                textBox1.Focus();
-                goto Exit;
+                while (true)
+                {
+                    while (true)
+                    {
+                        textBox1.Text = textBox1.Text + (i + k) + " X " + j + " = " + ((i + k) * j) + "       ";
+                        k++;
+                        if (k > 3) break;
+                    }
+                    k = 0; textBox1.Text = textBox1.Text + Environment.NewLine;
+                    j++;
+                    if (j > 9) break;
+                }
+                j = 1; textBox1.Text = textBox1.Text + Environment.NewLine;
+                i += 4;
+                if (i > 9) break;
             }
-            uint i, num1;
-            num1 = uint.Parse(textBox1.Text);
-            i = 1;
-
-            textBox2.Text = "";
-
-            while(i <=9)
-            {
-                textBox2.Text = textBox2.Text + num1 + " X " + i + " = " + (num1 * i) + "\r\n";
-                i++;
-            }
-            
-        Exit:;
         }
     }
 }
