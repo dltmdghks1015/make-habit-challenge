@@ -40,31 +40,6 @@ namespace C샵_계산기
                 textBox1.Text = (num / double.Parse(textBox1.Text)).ToString();
             }
         }
-        private void button17_Click(object sender, EventArgs e)
-        {
-            if(textBox1.Text != "")
-            {
-                if (Operation != "")
-                    Operation_function();
-                num = double.Parse(textBox1.Text);
-                Operation = "x";
-                bJjeom_Flag = false;
-                Clear_Flag = true;
-            }
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-            if(textBox1.Text != "")
-            {
-                if (Operation != "")
-                    Operation_function();
-                num = double.Parse(textBox1.Text);
-                Operation = "-";
-                bJjeom_Flag = false;
-                Clear_Flag = true;
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -227,6 +202,7 @@ namespace C샵_계산기
         
         private void button15_Click(object sender, EventArgs e)
         {
+            Operation = "";
             if(textBox1.Text != "")
             {
                 if (Operation != "")
@@ -237,10 +213,38 @@ namespace C샵_계산기
                 Clear_Flag = true;
             }
         }
+        private void button16_Click(object sender, EventArgs e)
+        {
+            Operation = "";
+            if (textBox1.Text != "")
+            {
+                if (Operation != "")
+                    Operation_function();
+                num = double.Parse(textBox1.Text);
+                Operation = "-";
+                bJjeom_Flag = false;
+                Clear_Flag = true;
+            }
+        }
+        private void button17_Click(object sender, EventArgs e)
+        {
+            Operation = "";
+            if (textBox1.Text != "")
+            {
+                if (Operation != "")
+                    Operation_function();
+                num = double.Parse(textBox1.Text);
+                Operation = "x";
+                bJjeom_Flag = false;
+                Clear_Flag = true;
+            }
+        }
+
 
         private void button18_Click(object sender, EventArgs e)
         {
-            if(textBox1.Text != "")
+            Operation = "";
+            if (textBox1.Text != "")
             {
                 if (Operation != "")
                     Operation_function();
@@ -260,8 +264,12 @@ namespace C샵_계산기
 
                 bJjeom_Flag = false;
                 Clear_Flag = true;
-                Operation = "";
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
