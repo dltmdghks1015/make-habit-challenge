@@ -8,3 +8,13 @@ D:\202204216\C샵 계산기\obj\Debug\C샵 계산기.csproj.GenerateResource.cac
 D:\202204216\C샵 계산기\obj\Debug\C샵 계산기.csproj.CoreCompileInputs.cache
 D:\202204216\C샵 계산기\obj\Debug\C샵 계산기.exe
 D:\202204216\C샵 계산기\obj\Debug\C샵 계산기.pdb
+D:\환승\C샵 계산기\bin\Debug\C샵 계산기.exe.config
+D:\환승\C샵 계산기\bin\Debug\C샵 계산기.exe
+D:\환승\C샵 계산기\bin\Debug\C샵 계산기.pdb
+D:\환승\C샵 계산기\obj\Debug\C샵 계산기.csproj.AssemblyReference.cache
+D:\환승\C샵 계산기\obj\Debug\C샵_계산기.Form1.resources
+D:\환승\C샵 계산기\obj\Debug\C샵_계산기.Properties.Resources.resources
+D:\환승\C샵 계산기\obj\Debug\C샵 계산기.csproj.GenerateResource.cache
+D:\환승\C샵 계산기\obj\Debug\C샵 계산기.csproj.CoreCompileInputs.cache
+D:\환승\C샵 계산기\obj\Debug\C샵 계산기.exe
+D:\환승\C샵 계산기\obj\Debug\C샵 계산기.pdb

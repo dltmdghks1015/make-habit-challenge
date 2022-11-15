@@ -202,7 +202,7 @@ namespace C샵_계산기
         
         private void button15_Click(object sender, EventArgs e)
         {
-            Operation = "";
+            // Operation = "";
             if(textBox1.Text != "")
             {
                 if (Operation != "")
@@ -215,7 +215,7 @@ namespace C샵_계산기
         }
         private void button16_Click(object sender, EventArgs e)
         {
-            Operation = "";
+            // Operation = "";
             if (textBox1.Text != "")
             {
                 if (Operation != "")
@@ -228,7 +228,7 @@ namespace C샵_계산기
         }
         private void button17_Click(object sender, EventArgs e)
         {
-            Operation = "";
+            // Operation = "";
             if (textBox1.Text != "")
             {
                 if (Operation != "")
@@ -243,7 +243,7 @@ namespace C샵_계산기
 
         private void button18_Click(object sender, EventArgs e)
         {
-            Operation = "";
+            // Operation = "";
             if (textBox1.Text != "")
             {
                 if (Operation != "")
@@ -264,10 +264,111 @@ namespace C샵_계산기
 
                 bJjeom_Flag = false;
                 Clear_Flag = true;
+                num = 0;
+                Operation = "";
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = (1 / double.Parse(textBox1.Text)).ToString();
+                bJjeom_Flag = false;
+                Clear_Flag = true;
+                num = 0;
+                Operation = "";
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        { // x ^ 2 버튼
+            if (textBox1.Text != "")
+            {
+                // double x = double.Parse(textBox1.Text);
+                // textBox1.Text = (x * x).ToString();
+                textBox1.Text = Math.Pow(double.Parse(textBox1.Text), 2).ToString();
+                bJjeom_Flag = false;
+                Clear_Flag = true;
+                num = 0;
+                Operation = ""; 
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        { // + / - 버튼
+            if (textBox1.Text != "")
+            {
+                // 편집 버전
+                //if (double.Parse(textBox1.Text) == 0)
+                //  textBox1.Text = textBox1.Text;
+                //else if (double.Parse(textBox1.Text) > 0)
+                //textBox1.Text = "-" + textBox1.Text;
+                //else if (double.Parse(textBox1.Text) < 0)
+                //textBox1.Text = textBox1.Text.Substring(1, textBox1.TextLength - 1);
+
+                // 계산 버전
+                textBox1.Text = (-(double.Parse(textBox1.Text))).ToString();
+            }
+        }
+
+        private void 일반계산기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 집보내주십쇼ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            groupBox1.Hide();
+            this.Text = "일반 계산기";
+            this.Width = 370;
+            공학계산기ToolStripMenuItem.Checked = true;
+            공학계산기ToolStripMenuItem1.Checked = false;
+        }
+
+        private void 공학계산기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            groupBox1.Hide();
+            this.Text = "일반 계산기";
+            this.Width = 370;
+            textBox1.Width = 270;
+            공학계산기ToolStripMenuItem.Checked = true;
+            공학계산기ToolStripMenuItem1.Checked = false;
+            label1.Text = "By L.S.H in Dept. Software Engineering of Seoil University!";
+        }
+
+        private void 공학계산기ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+            this.Text = "공학 계산기";
+            this.Width = 525;
+            textBox1.Width = 420;
+            공학계산기ToolStripMenuItem.Checked = false;
+            공학계산기ToolStripMenuItem1.Checked = true;
+            label1.Text = "This Calculator is maded by L.S.H in Dept. Software Engineering of Seoil University!";
+        }
+
+        private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void 도움말ToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
