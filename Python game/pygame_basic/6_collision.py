@@ -26,8 +26,10 @@ character_x_pos = (screen_width / 2) - (character_width / 2) # 화면 가로의 
 character_y_pos = screen_height - character_height # 화면 세로 크기 가장 아래에 해당하는 곳에 위치 (세로)
 
 # 이동할 좌표
-to_x = 0
-to_y = 0
+character_to_x_LEFT = 0
+character_to_x_RIGHT = 0
+character_to_y_UP = 0
+character_to_y_DOWN = 0
 
 # 이동 속도
 character_speed = 0.6 
@@ -52,22 +54,26 @@ while running:
 
         if event.type == pygame.KEYDOWN: # 키가 눌러졌는지 확인
             if event.key == pygame.K_LEFT: # 캐릭터를 왼쪽으로
-                to_x -= character_speed
+                character_to_x_LEFT -= character_speed
             elif event.key == pygame.K_RIGHT: # 캐릭터를 오른쪽으로
-                to_x += character_speed
+                character_to_x_RIGHT += character_speed
             elif event.key == pygame.K_UP: # 캐릭터를 위로
-                to_y -= character_speed
+                character_to_y_UP -= character_speed
             elif event.key == pygame.K_DOWN: # 캐릭터를 아래로
-                to_y += character_speed
+                character_to_y_DOWN += character_speed
 
         if event.type == pygame.KEYUP: # 방향키를 떼면 멈춤
-            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                to_x = 0
-            elif event.key == pygame.K_UP or event.key == pygame.K_DOWN:
-                to_y = 0
+            if event.key == pygame.K_LEFT:
+                character_to_x_LEFT = 0
+            if event.key == pygame.K_RIGHT:
+                character_to_x_RIGHT = 0
+            elif event.key == pygame.K_UP:
+                character_to_y_UP = 0
+            elif event.key == pygame.K_DOWN:
+                character_to_y_DOWN = 0
 
-    character_x_pos += to_x * dt
-    character_y_pos += to_y * dt
+    character_x_pos += (character_to_x_LEFT + character_to_x_RIGHT) * dt
+    character_y_pos += (character_to_y_UP + character_to_y_DOWN) * dt
 
     # 가로 경계값 처리
     if character_x_pos < 0:

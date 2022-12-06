@@ -40,7 +40,8 @@ character_height = character_size[1]
 character_x_pos = (screen_width / 2) - (character_width / 2)
 character_y_pos = screen_height - character_height
 
-to_x = 0
+character_to_x_RIGHT = 0
+character_to_x_LEFT = 0
 
 character_speed = 0.6
 enemy_speed = 8
@@ -64,15 +65,17 @@ while running:
         # 3. 게임 캐릭터 위치 정의
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                to_x -= character_speed
+                character_to_x_LEFT -= character_speed
             elif event.key == pygame.K_RIGHT:
-                to_x += character_speed
+                character_to_x_RIGHT += character_speed
 
         if event.type == pygame.KEYUP:
-            if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
-                to_x = 0
+            if event.key == pygame.K_LEFT:
+                character_to_x_LEFT = 0
+            elif event.key == pygame.K_RIGHT:
+                character_to_x_RIGHT = 0
 
-    character_x_pos += to_x * dt
+    character_x_pos += (character_to_x_LEFT + character_to_x_RIGHT) * dt
 
     if character_x_pos < 0:
         character_x_pos = 0
