@@ -117,8 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="123" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\123.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>교수님 1년 동안 수업을 위해 애써주시고 분위기 좋게 가르쳐주셔서 감사했습니다
+비록 전 내년부터는 군대를 가야 해서 교수님 수업을 2년 뒤에나 듣겠지만 2년 뒤에
+와서 다시 교수님 수업을 들을수 있을지 모르겠지만 교수님 수업을 다시 
+듣게 된다면 행복할거 같습니다. C#이라는 언어를 분위기 좋고 재밌게
+배우는 시간이여서 감사했습니다.
+복학 하고 다시 찾아 뵙겠습니다</value>
   </data>
 </root>

@@ -117,8 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="123" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\123.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TextBox1.Text" xml:space="preserve">
+    <value>1. 본 계산기는 MS계산기와는 달리 처음에 "0"이 표시되지 않습니다.
+
+2. "0"을 입력하면 "."만 입력해도 자동으로 "0."이 표시됩니다.
+
+2. "&lt;--"버튼은 금방 입력한 숫자를 오른쪽부터 왼쪽으로 지우는 버튼입니다.
+
+3. "&lt;--"버튼으로 삭제시에 "0."에서"."을 삭제하면 "0"도 자동으로 삭제됩니다.
+
+5. "000"은 한번에 "0"을 3개 표시해주어 편리합니다.
+
+6. "mod" 버튼은 몫이 아니라 나머지를 구하는 연산 버튼입니다.
+
+7. "π" 버튼은 원주율을 표시해주는 편리한 버튼입니다.
+
+8. "|x|"는 x에 대한 절대값을 구해준느 버튼입니다.
+
+9. "C"버튼은 화면의 모든 것을 삭제하며 내부 저장소도 지워주는 버튼입니다.
+
+10. 사용중 문의 사항은 'mnl124@naver.com'으로 보내주세요</value>
   </data>
 </root>

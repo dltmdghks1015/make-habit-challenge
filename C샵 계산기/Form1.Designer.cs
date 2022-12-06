@@ -386,6 +386,7 @@ namespace C샵_계산기
             this.button34.TabIndex = 34;
             this.button34.Text = "√";
             this.button34.UseVisualStyleBackColor = false;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // button23
             // 
@@ -397,6 +398,7 @@ namespace C샵_계산기
             this.button23.TabIndex = 33;
             this.button23.Text = "mod";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button24
             // 
@@ -408,6 +410,7 @@ namespace C샵_계산기
             this.button24.TabIndex = 32;
             this.button24.Text = "π";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button25
             // 
@@ -419,6 +422,7 @@ namespace C샵_계산기
             this.button25.TabIndex = 31;
             this.button25.Text = "1/|x|";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button26
             // 
@@ -442,6 +446,7 @@ namespace C샵_계산기
             this.button27.TabIndex = 29;
             this.button27.Text = "10^x";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // button28
             // 
@@ -489,6 +494,7 @@ namespace C샵_계산기
             this.button31.TabIndex = 25;
             this.button31.Text = "|x|";
             this.button31.UseVisualStyleBackColor = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
@@ -578,12 +584,14 @@ namespace C샵_계산기
             this.개발자소개ToolStripMenuItem.Name = "개발자소개ToolStripMenuItem";
             this.개발자소개ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.개발자소개ToolStripMenuItem.Text = "개발자 소개";
+            this.개발자소개ToolStripMenuItem.Click += new System.EventHandler(this.개발자소개ToolStripMenuItem_Click);
             // 
             // 교수님에게하고픈말ToolStripMenuItem
             // 
             this.교수님에게하고픈말ToolStripMenuItem.Name = "교수님에게하고픈말ToolStripMenuItem";
             this.교수님에게하고픈말ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.교수님에게하고픈말ToolStripMenuItem.Text = "교수님에게 하고픈 말";
+            this.교수님에게하고픈말ToolStripMenuItem.Click += new System.EventHandler(this.교수님에게하고픈말ToolStripMenuItem_Click);
             // 
             // 계사니사용법ToolStripMenuItem
             // 
@@ -604,14 +612,16 @@ namespace C샵_계산기
             // 개발환경ToolStripMenuItem
             // 
             this.개발환경ToolStripMenuItem.Name = "개발환경ToolStripMenuItem";
-            this.개발환경ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.개발환경ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.개발환경ToolStripMenuItem.Text = "개발 환경";
+            this.개발환경ToolStripMenuItem.Click += new System.EventHandler(this.개발환경ToolStripMenuItem_Click);
             // 
             // 버전정보ToolStripMenuItem
             // 
             this.버전정보ToolStripMenuItem.Name = "버전정보ToolStripMenuItem";
-            this.버전정보ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.버전정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.버전정보ToolStripMenuItem.Text = "버전 정보";
+            this.버전정보ToolStripMenuItem.Click += new System.EventHandler(this.버전정보ToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -621,7 +631,7 @@ namespace C샵_계산기
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 9);
             this.label1.TabIndex = 25;
-            this.label1.Text = "By L.S.H in Dept.Software Engineering of Seoil Univ.";
+            this.label1.Text = "By L.S.H in Dept.Software Engeeniring of Seoil Univ.";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1

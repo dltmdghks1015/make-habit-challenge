@@ -39,14 +39,19 @@ C:\Users\a\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj
 C:\Users\a\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.CoreCompileInputs.cache
 C:\Users\a\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.exe
 C:\Users\a\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.pdb
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\bin\Debug\C샵 계산기.exe.config
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\bin\Debug\C샵 계산기.exe
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\bin\Debug\C샵 계산기.pdb
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.AssemblyReference.cache
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.SuggestedBindingRedirects.cache
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Form1.resources
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Properties.Resources.resources
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.GenerateResource.cache
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.CoreCompileInputs.cache
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.exe
-C:\Users\ehdrb\Documents\카카오톡 받은 파일\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.pdb
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\bin\Debug\C샵 계산기.exe.config
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\bin\Debug\C샵 계산기.exe
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\bin\Debug\C샵 계산기.pdb
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.AssemblyReference.cache
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Form1.resources
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Properties.Resources.resources
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.GenerateResource.cache
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.csproj.CoreCompileInputs.cache
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.exe
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵 계산기.pdb
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Form2.resources
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Form3.resources
+C:\Users\seoil\Desktop\C샵 계산기\C샵 계산기\obj\Debug\C샵_계산기.Form4.resources
+D:\202204216\C샵 계산기\obj\Debug\C샵_계산기.Form2.resources
+D:\202204216\C샵 계산기\obj\Debug\C샵_계산기.Form3.resources
+D:\202204216\C샵 계산기\obj\Debug\C샵_계산기.Form4.resources
