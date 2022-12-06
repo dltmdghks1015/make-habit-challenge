@@ -1,4 +1,0 @@
-﻿  소스.cpp
-D:\202204216\Project1\소스.cpp(10,1): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-D:\202204216\Project1\소스.cpp(14,10): warning C4129: ' ': 문자 이스케이프 시퀀스를 인식할 수 없습니다.
-  Project1.vcxproj -> D:\202204216\Project1\Debug\Project1.exe
